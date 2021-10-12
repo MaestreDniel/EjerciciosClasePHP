@@ -29,10 +29,12 @@
     <?php 
 
         define('COLUMNAS', 4);
+        global $var;
 
-        $contenido_var = array(null, 0, true, false, "0", "", "foo", array());
+        $contenido_var = array(null, 0, true, false, "0", "", "foo", array(), $var);
+        unset($var);
         $info_tabla = array('$var = null;', '$var = 0;', '$var = true;', '$var = false;',
-        '$var = 0;', '$var = "";', '$var = foo;', '$var = array();');
+        '$var = 0;', '$var = "";', '$var = foo;', '$var = array();', 'unset ($var);');
         $infooo_tabla = array('Contenido de $var', 'isset($var)', 'empty($var)', '(bool) $var');
 
         echo "<table>"; "<tr>"; // Abre tabla y fila aquí
