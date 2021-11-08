@@ -29,7 +29,7 @@
     /**
      * @author Daniel Maestre Hermoso
      * Fecha Inicio: 13/10/2021
-     * Fecha Fin: 20/10/2020
+     * Fecha Fin: 20/10/2021
      * Curso: 2º FP DAW Presencial
      * Módulo: DWES
      * Práctica: Agenda sin cookies, sesiones ni bases de datos
@@ -89,5 +89,6 @@
     ?>
 
     </form>
+    <br><a href="./">Volver al índice</a>
 </body>
 </html>

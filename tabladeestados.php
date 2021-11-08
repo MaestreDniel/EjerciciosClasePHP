@@ -56,5 +56,6 @@
         echo "</tr>"; "</table>"; // Cierra última fila y tabla
 
     ?>
+    <br><a href="./">Volver al índice</a>
 </body>
 </html>

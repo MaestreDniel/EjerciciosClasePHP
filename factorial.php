@@ -29,5 +29,6 @@
     ?>
 
     </form>
+    <br><a href="./">Volver al índice</a>
 </body>
 </html>

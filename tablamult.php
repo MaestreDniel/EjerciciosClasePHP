@@ -58,6 +58,6 @@
         } echo "</table>";
         ?>
         
-        <br><a href="../ejerciciosclase">Volver al índice</a>
+        <br><a href="./">Volver al índice</a>
     </body>
 </html>
