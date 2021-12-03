@@ -9,17 +9,33 @@
 <body>
     <style>
         body {
-            background: rgb(200,224,224);
-            background: linear-gradient(90deg, rgba(200,224,224,1) 0%, rgba(145,185,203,1) 25%, rgba(131,194,214,1) 85%);
+            margin: 0;
+            font-family: sans-serif;
+            background: rgb(175,175,175);
+            background: linear-gradient(90deg, rgba(175,175,175,1) 10%, rgba(100,100,100,1) 90%);
         }
+
+        header {
+            background-color: #222222;
+            text-align: center;
+            padding: 2vw;
+            color: white;
+            font-size: 3vw;
+            font-weight: bold;
+        }
+
+        ul {
+            font-size: larger;
+        }
+
     </style>
     <?php
-        echo "<h1>Daniel Maestre - 2do curso DAW - Modulo de Desarrollo Web en entorno servidor</h1>";
-        echo "<h2><a href='http://dmaestre.ifc33b.cifpfbmoll.eu/EjerciciosClasePHP/'>Ejercicios de clase</a><h2>";
-
+        echo "<header>Daniel Maestre - 2do curso DAW<br>Modulo de Desarrollo Web en entorno servidor</header>";
     ?>
+    <ul>
+        <li><a href='http://dmaestre.ifc33b.cifpfbmoll.eu/EjerciciosClasePHP/'>Ejercicios de clase</a></li>
+        <li><a href='http://dmaestre.ifc33b.cifpfbmoll.eu/dwes_2021-MaestreDniel/'>Repositorio de GitHub Classroom</a></li>
+        <li><a href='http://dmaestre.ifc33b.cifpfbmoll.eu/laravel_pruebas-MaestreDniel/'>Repositorio de Laravel Pruebas</a></li>
+    </ul>
 </body>
 </html>
-
-
-

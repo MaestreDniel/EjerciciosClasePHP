@@ -57,6 +57,7 @@
                 $agenda[($_GET['nombre'])] = $_GET['telefono'];
             }
         }
+        
 
         // Cuando la agenda está construida, se empieza a recorrer con tal de introducir todos los datos
         if (is_array($agenda)) {

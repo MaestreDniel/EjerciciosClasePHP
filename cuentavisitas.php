@@ -22,7 +22,7 @@
     <main>
         <?php 
 
-        if (isset($_COOKIE['unacookie'])){
+        if (isset($_COOKIE['unacookie'])) {
             $veces = ++$_COOKIE['unacookie'];
             setcookie('unacookie', $veces);
             echo "<h1>Has visitado esta página " . $_COOKIE['unacookie'] . " veces</h1>";
@@ -34,8 +34,6 @@
 
         ?>
     </main>
-    
-
     </form>
     <br><a href="./">Volver al índice</a>
 </body>

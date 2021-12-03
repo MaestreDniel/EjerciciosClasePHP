@@ -28,7 +28,7 @@
         /**
          * @author Daniel Maestre Hermoso
          * Fecha Inicio: 03/11/2021
-         * Fecha Fin: xx/11/2021
+         * Fecha Fin: 10/11/2021
          * Curso: 2º FP DAW Presencial
          * Módulo: DWES
          * Práctica: Agenda que almacena sus datos mediante sesiones de PHP
@@ -41,7 +41,7 @@
             if ($_SESSION) {
                 foreach ($_SESSION['agenda'] as $clave => $valor) {
                     if ($clave == $_GET['nombre']) {
-                        unset($_SESSION['agenda'][$clave]);
+                        unset($_SESSION['agenda'][$clave]); // Elimina un contacto si solo se pone el nombre
                     } else {
                         echo "<h3>" . $clave . " - " . $valor . "</h3>";
                     }
@@ -53,15 +53,6 @@
                 echo "<h3>" . $clave . " - " . $valor . "</h3>";
             }
         }
-        
-        /* if ($_SESSION['agenda'] == 0) {
-            echo "<p>La agenda no tiene ningún contacto</p>";
-            echo "<h2>Instrucciones: </h2>";
-            echo "<p>Si el campo del nombre: </p> - Está vacío: se muestra una advertencia.<br>";
-            echo "- Su valor no existe en la agenda y el nº tel no está vacío: se añade a la agenda.<br>";
-            echo "- Su valor ya existe en la agenda y nº tel no está vacío: se sustituye el nº tel anterior.<br>";
-            echo "- Su valor ya existe en la agenda y el nº tel está vacío: se elimina el nombre correspondiente de la agenda.<br>";
-        } */
 
         ?>
 
