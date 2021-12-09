@@ -10,29 +10,26 @@
     <h1>Agenda de contactos</h1>
         <form name="formulario" method="get" action="">
         <label><h2>Nombre:</h2></label>
-        <input type="text" name="name" placeholder="Gerundio González"/><br>
+        <input type="text" name="name" placeholder="Gerundio González" required/><br>
         <label><h2>Teléfono:</h2></label>
         <input type="text" maxlength="9" name="telephone" placeholder="611222333"/><br><br>
         <input type="submit" name="submit" value="Enviar"/></label><br>
+        <h2>Instrucciones: </h2>
+        - Rellena ambos campos para que se añada el contacto a la agenda.<br>
+        - Para actualizar el nº tel de un contacto debes poner su nombre y un nuevo nº tel.<br>
+        - Si solo pones el nombre, se elimina ese contacto.<br>
         <h2>Contactos</h2>
+        
         <?php
             /**
              * @author: Daniel Maestre Hermoso
              * Fecha Inicio: 02/12/2021
-             * Fecha Fin: /12/2021
+             * Fecha Fin: 09/12/2021
              * Curso: 2º FP DAW
              * Modulo: Programación en Entorno Servidor
-             * Practica Agenda con OOP, PDO y BBDD
+             * Practica Agenda con B.D. y clases
              * @version: 1.0
              */
-
-
-            /*function mi_autocargador($clase) {
-                include 'objects/' . $clase . '.clase.php';
-            }
-            spl_autoload_register('mi_autocargador');
-            spl_autoload_register('contactos');
-            spl_autoload_register('user');*/
     
             include_once 'objects/contactos.php';
             
@@ -62,7 +59,6 @@
             if (!empty($_GET)) {
                 try {
                     
-
                     $contactos->name = $_GET['name'];
                     $contactos->telephone = $_GET['telephone'];
                     

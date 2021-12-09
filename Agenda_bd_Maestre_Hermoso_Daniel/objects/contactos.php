@@ -59,9 +59,9 @@
             
             // execute the query
             if ($stmt->execute()) {
-                echo "<div class='alert alert-success'>Contact was delete.</div>";
+                echo "<div class='alert alert-success'>Has eliminado el contacto.</div>";
             } else {
-                echo "<div class='alert alert-danger'>Contact wasn't delete.</div>";
+                echo "<div class='alert alert-danger'>No se pudo eliminar el contacto.</div>";
             }
         }
         

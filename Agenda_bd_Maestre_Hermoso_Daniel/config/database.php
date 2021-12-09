@@ -1,14 +1,14 @@
 <?php
     class Database{
 
-        // specify your own database credentials
+        // Para determinar los parámetros de tu base de datos
         private $host = "localhost";
         private $db_name = "Agenda_BBDD_OO";
         private $username = "root";
         private $password = "";
         public $conn;
 
-        // get the database connection
+        // Conectarse a la base de datos
         public function getConnection(){
 
             try{
