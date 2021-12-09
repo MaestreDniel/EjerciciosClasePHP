@@ -1,0 +1,10 @@
+
+CREATE DATABASE IF NOT EXISTS `Agenda_BBDD_OO`;
+CREATE TABLE IF NOT EXISTS `contactos` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `name` varchar(252) NOT NULL,
+    `telephone` varchar(9),
+    `create_time` datetime,
+    `update_time` datetime,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;

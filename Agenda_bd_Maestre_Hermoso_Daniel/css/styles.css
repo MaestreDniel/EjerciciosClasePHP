@@ -1,0 +1,35 @@
+body {
+    background-color: #EEEEEE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h2 {
+    text-decoration: underline;
+}
+
+table {
+    background-color: darkgray;
+    margin-top: 2em;
+}
+
+.alert-danger {
+    display: inline;
+    background-color: darksalmon;
+    color: red;
+    padding: 5px;
+}
+
+.alert-success {
+    display: inline;
+    background-color: palegreen;
+    color: green;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+}
+
+td {
+    padding: 0.3em;
+}
