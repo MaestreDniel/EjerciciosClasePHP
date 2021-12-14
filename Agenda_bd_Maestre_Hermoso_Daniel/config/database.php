@@ -1,24 +1,27 @@
 <?php
-    class Database{
-
-        // Para determinar los parámetros de tu base de datos
-        private $host = "localhost";
-        private $db_name = "Agenda_BBDD_OO";
-        private $username = "root";
-        private $password = "";
-        public $conn;
-
-        // Conectarse a la base de datos
-        public function getConnection(){
-
-            try{
-               //$this->conn = null;
-               $this->conn = new PDO("mysql:host={$this->host};dbname={$this->db_name}", $this->username, $this->password);
-               //$this->conn = new PDO("pgsql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
-            }catch(PDOException $exception){
-                echo "Connection error: " . $exception->getMessage();
-            }
-            return $this->conn;
+// used to get mysql database connection
+class Database{
+ 
+    // Las credenciales de la base de datos que tengo en remoto
+    private $host = "51.178.152.213";
+    private $db_name = "agenda_bd_maestre_hermoso_daniel";
+    private $username = "dmaestre_usr";
+    private $password = "abc123.";
+    public $conn;
+ 
+    // get the database connection
+    public function getConnection(){
+ 
+        $this->conn = null;
+ 
+        try{
+            $this->conn = new PDO("pgsql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+        }catch(PDOException $exception){
+            echo "Connection error: " . $exception->getMessage();
         }
+ 
+        return $this->conn;
     }
+}
 ?>
+
